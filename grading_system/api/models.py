@@ -111,7 +111,7 @@ class EstudiantedeCurso(models.Model):
 		ordering = ['course_id', 'year'] 
 
 	def __str__(self):
-		return '{}, {}, {}'.format(self.student_id, self.course_id, self.year)
+		return '{}, {}, {}'.format(self.year, self.course_id, self.student_id)
 
 class Nota(models.Model):
 	student_id = models.ForeignKey('EstudiantedeCurso', related_name='Curso', on_delete=models.CASCADE)

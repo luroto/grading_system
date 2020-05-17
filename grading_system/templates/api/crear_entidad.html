@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+*
+*
+*
+</head>
+<body>
+<form method="POST"> 
+	{% csrf_token %}
+	{{entidad_form.as_p}}
+	<button type="submit"> Crear
+	</button> 
+</form>
+</body>
+</html>
